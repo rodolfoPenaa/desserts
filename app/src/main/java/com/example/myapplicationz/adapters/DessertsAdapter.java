@@ -23,7 +23,7 @@ public class DessertsAdapter extends RecyclerView.Adapter<DessertsAdapter.ViewHo
     private static final String TAG = "DessertsAdapter";
 
     private LayoutInflater mLayoutInflater;
-    private List<Desserts> mDesserts = new ArrayList<>();
+    private List<Desserts> mDesserts;
     private Context mContext;
     private OnItemClickListener listener;
 
@@ -85,7 +85,6 @@ public class DessertsAdapter extends RecyclerView.Adapter<DessertsAdapter.ViewHo
             return "DontExistPosition";
         }
     }
-
     private int getImageByPosition(int position) {
         if (position != RecyclerView.NO_POSITION) {
             return mDesserts.get(position).getId();
@@ -93,7 +92,6 @@ public class DessertsAdapter extends RecyclerView.Adapter<DessertsAdapter.ViewHo
             return 0;
         }
     }
-
 
     public interface OnItemClickListener {
         public void onClick(DessertsAdapter.ViewHolder viewHolder, String imageView, int id);

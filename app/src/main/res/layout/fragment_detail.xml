@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DetailFragment">
+    tools:context=".DetailFragment"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/nameDessert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="29sp" />
+        android:textSize="29sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageViewFragment"

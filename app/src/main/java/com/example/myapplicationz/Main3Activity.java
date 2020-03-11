@@ -29,7 +29,7 @@ private DessertsAdapter mAdapter;
         mRecyclerView = findViewById(R.id.gridview);
         mAdapter = new DessertsAdapter(initializeDesserts(),this,this);
         mRecyclerView.setAdapter(mAdapter);
-        //recyclerView.setHasFixedSize(true);
+        //recyclerView.setHasFixedSize(true); USO PARA
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
     }

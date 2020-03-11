@@ -34,7 +34,7 @@ public class DetailFragment extends Fragment {
 
 
 
-    public static DetailFragment newInstance(String param1, int param2) {
+    public static DetailFragment    newInstance(String param1, int param2) {
         DetailFragment fragment = new DetailFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -65,7 +65,8 @@ public class DetailFragment extends Fragment {
 
         textViewName.setText(dessertName);
         Glide.with(getContext())
-                .load(dessertImage).centerCrop().into(imageView);
+                .load(dessertImage)
+                .into(imageView);
 
         return view;
     }
